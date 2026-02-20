@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <LINK rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Atividade pratica (Meritocracia)</h1>
+
+    <h4>Insira os dados do funcionário:</h4>
+
+    <h3>Resultado</h3>
+
+    <label for="faltas">Faltas:</label> <br>
+    <input type="number" id="faltas" placeholder="faltas do funcionário">
+    <br><br>
+    <label for="cargo">Cargo:</label> <br>
+    <select name="cargo" id="cargo">
+        <option value="">Selecione o cargo</option>
+        <option value="Gerente">Gerente</option>
+        <option value="Analista">Analista</option>
+        <option value="Desenvolvedor">Desenvolvedor</option>
+    </select>
+    <br><br>
+    <label for="salario">Salário:</label> <br>
+    <input type="number" id="salario" placeholder="Digite o salário do funcionário">
+    <hr>
+    <button onclick="exibirDados()">Exibir Dados</button>
+    <p id="resultado"></p>
+    <script>
+        
+        
+        function exibirDados() {
+            const faltas= document.getElementById('faltas').value;
+            const cargo = document.getElementById('cargo').value;
+            const salario = document.getElementById('salario').value;
+            
+
+            let aumento = 0;  
+
+            if (faltas == 0) {
+                 switch (cargo) {
+                case 'Gerente': 
+                    aumento = salario * 0.10; 
+                    break;
+                case 'Analista':
+                    aumento = salario * 0.15;
+                    break;
+                case 'Desenvolvedor':
+                    aumento = salario * 0.10;
+                    break;
+                
+                    
+            }
+            
+                let novoSalario = parseFloat(salario) + aumento;
+                document.getElementById('resultado').textContent = `O funcionário recebeu um aumento de R$ ${aumento.toFixed(2)}. O novo salário é R$ ${novoSalario.toFixed(2)}.`;
+            }else {
+                document.getElementById('resultado').textContent = `O funcionário não recebeu aumento devido às faltas.`;
+            }
+
+        }
+        
+        
+
+
+            
+            
+        
+    </script>
+</body>
+</html>

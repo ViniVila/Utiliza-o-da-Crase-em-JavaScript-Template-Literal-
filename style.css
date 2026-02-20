@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(125, 212, 255);
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: verdana;
+}
+h4{
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+h3{
+    font-family: verdana;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    margin-top: 0;
+    justify-content: right ;
+    width: 950px;
+    
+
+}
+label{
+    font-family: verdana;
+    font-size: 20px;
+    color: white;
+
+
+}
+p{
+    font-family: verdana;
+    font-size: 20px;
+    color: white;
+    margin-left: 700px;
+    width: 500px;
+    margin-top: -300px;
+}
+input{
+    
+    margin: 20px auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #00073a;
+}
+button{
+    margin: 20px auto;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #00073a;
+    background-color: white;
+}
+select{
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #00073a;
+}
+
+   hr {
+    width: 60%;
+  transform: rotate(90deg); 
+  border: 1.5px solid rgb(255, 0, 144);
+  
+}
+
+
+
+
